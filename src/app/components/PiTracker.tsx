@@ -135,25 +135,25 @@ const PiTracker = ({ readerVersion }: { readerVersion: string }) => {
           <span className="font-semibold">
             Future plans for this development:
           </span>
-          <li>
-            combination tone: this is a wild idea but you can expect to hear a
-            randomized voice between low and high tones!
-          </li>
-          <li>
-            Random numbers instead of Pi: you might get used to the first 200
-            sequence of numbers before you fall asleep. Sometimes for me, I have
-            to switch to a different video while falling asleep. With the random
-            numbers, you will never know what to expect except the unexpected!{" "}
-            {">:D"}
-          </li>
-          <li>
-            Risque-esque: ooh hoo hoo. This might be my most daring contribution
-            to society. And I hope no one finds out about this one. I might add
-            some stuff in here such as moaning or ASMR pillow talk. who knows if
-            I'll have time for this tho? because where would I even record this?
-            HAHA.
-          </li>
         </p>
+        <li>
+          combination tone: this is a wild idea but you can expect to hear a
+          randomized voice between low and high tones!
+        </li>
+        <li>
+          Random numbers instead of Pi: you might get used to the first 200
+          sequence of numbers before you fall asleep. Sometimes for me, I have
+          to switch to a different video while falling asleep. With the random
+          numbers, you will never know what to expect except the unexpected!{" "}
+          {">:D"}
+        </li>
+        <li>
+          Risque-esque: ooh hoo hoo. This might be my most daring contribution
+          to society. And I hope no one finds out about this one. I might add
+          some stuff in here such as moaning or ASMR pillow talk. who knows if
+          I'll have time for this tho? because where would I even record this?
+          HAHA.
+        </li>
       </div>
       <audio ref={audioRef}></audio> {/* Add the audio element */}
     </div>
