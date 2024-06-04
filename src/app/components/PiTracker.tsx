@@ -94,7 +94,7 @@ const PiTracker = ({ readerVersion }: { readerVersion: string }) => {
   };
 
   return (
-    <div>
+    <div className=" h-screen bg-purple-500">
       Available Options
       <button onClick={handleReadPiStart}>Start!</button>
       <li>
@@ -121,6 +121,40 @@ const PiTracker = ({ readerVersion }: { readerVersion: string }) => {
         combination tone
         </button>
       </li> */}
+      <div>
+        <p className="">
+          <span className="font-extrabold">Dev Logs:</span>
+        </p>
+        <p>
+          <span className="font-semibold">Introduction</span>
+          Welcome to the sleepaid made by Andrew Choi! This was inspired by a
+          Kdrama and I hope the sound of my voice reciting 48000 digits of Pi
+          helps you fall asleep. Now, I do not have any experience in ASMR but
+          hopefully this helps you fall asleep {"> _<"}.
+          <br />
+          <span className="font-semibold">
+            Future plans for this development:
+          </span>
+          <li>
+            combination tone: this is a wild idea but you can expect to hear a
+            randomized voice between low and high tones!
+          </li>
+          <li>
+            Random numbers instead of Pi: you might get used to the first 200
+            sequence of numbers before you fall asleep. Sometimes for me, I have
+            to switch to a different video while falling asleep. With the random
+            numbers, you will never know what to expect except the unexpected!{" "}
+            {">:D"}
+          </li>
+          <li>
+            Risque-esque: ooh hoo hoo. This might be my most daring contribution
+            to society. And I hope no one finds out about this one. I might add
+            some stuff in here such as moaning or ASMR pillow talk. who knows if
+            I'll have time for this tho? because where would I even record this?
+            HAHA.
+          </li>
+        </p>
+      </div>
       <audio ref={audioRef}></audio> {/* Add the audio element */}
     </div>
   );
