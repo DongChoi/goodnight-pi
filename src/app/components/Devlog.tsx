@@ -44,7 +44,7 @@ const Devlog = () => {
       <li>
         Risque-esque: ooh hoo hoo. This might be my most daring contribution to
         society. And I hope no one finds out about this one. I might add some
-        stuff in here such as moaning or ASMR pillow talk. who knows if I'll
+        stuff in here such as moaning or ASMR pillow talk. who knows if I will
         have time for this tho? because where would I even record this? HAHA.
       </li>
     </div>
