@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-screen h-screen bg-purple-500">
+      <div className="w-full h-full">
         <PiHeader />
         <PiTracker readerVersion={readerVersion} />
         <PiFooter />

@@ -3,6 +3,8 @@
 import PIE_48000 from "@/data/pi_48000_digits";
 import React, { useEffect, useRef, useState } from "react";
 
+import Devlog from "./Devlog";
+
 interface AudioFilePath {
   low: string;
   high: string;
@@ -94,11 +96,16 @@ const PiTracker = ({ readerVersion }: { readerVersion: string }) => {
   };
 
   return (
-    <div className=" h-screen bg-purple-500">
-      Available Options
-      <button onClick={handleReadPiStart}>Start!</button>
+    <div className="border-2 text-slate-400 border-slate-400 h-screen p-4 m-4">
+      Available Options:
       <li>
-        <button onClick={() => resetController("low")}>low tone</button>
+        <button onClick={() => resetController("low")}>
+          <span
+            className={controller.readVersion === "low" ? "font-semibold" : ""}
+          >
+            low tone
+          </span>
+        </button>
       </li>
       <li>
         <button
@@ -106,7 +113,11 @@ const PiTracker = ({ readerVersion }: { readerVersion: string }) => {
             resetController("high");
           }}
         >
-          high tone
+          <span
+            className={controller.readVersion === "high" ? "font-semibold" : ""}
+          >
+            high tone
+          </span>
         </button>
       </li>
       {/* <li>
@@ -121,40 +132,15 @@ const PiTracker = ({ readerVersion }: { readerVersion: string }) => {
         combination tone
         </button>
       </li> */}
-      <div>
-        <p className="">
-          <span className="font-extrabold">Dev Logs:</span>
-        </p>
-        <p>
-          <span className="font-semibold">Introduction</span>
-          Welcome to the sleepaid made by Andrew Choi! This was inspired by a
-          Kdrama and I hope the sound of my voice reciting 48000 digits of Pi
-          helps you fall asleep. Now, I do not have any experience in ASMR but
-          hopefully this helps you fall asleep {"> _<"}.
-          <br />
-          <span className="font-semibold">
-            Future plans for this development:
-          </span>
-        </p>
-        <li>
-          combination tone: this is a wild idea but you can expect to hear a
-          randomized voice between low and high tones!
-        </li>
-        <li>
-          Random numbers instead of Pi: you might get used to the first 200
-          sequence of numbers before you fall asleep. Sometimes for me, I have
-          to switch to a different video while falling asleep. With the random
-          numbers, you will never know what to expect except the unexpected!{" "}
-          {">:D"}
-        </li>
-        <li>
-          Risque-esque: ooh hoo hoo. This might be my most daring contribution
-          to society. And I hope no one finds out about this one. I might add
-          some stuff in here such as moaning or ASMR pillow talk. who knows if
-          I'll have time for this tho? because where would I even record this?
-          HAHA.
-        </li>
-      </div>
+      <button
+        className="border-solid border-slate-400 rounded-lg py-1 px-4 border-4 font-semibold"
+        onClick={handleReadPiStart}
+      >
+        Play
+      </button>
+      <br />
+      <br />
+      <Devlog />
       <audio ref={audioRef}></audio> {/* Add the audio element */}
     </div>
   );
