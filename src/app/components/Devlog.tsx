@@ -7,6 +7,9 @@ const Devlog = () => {
         <span className="font-extrabold">Dev Log:</span>
       </p>
       <br />
+      June 05, 2024: Adds low tone for testing purposes. Will need to add a
+      better quality that is not recorded outside.
+      <br />
       June 04, 2024: Adds CSS styling for borders and fonts. Introducs new
       colors compatible for sleep.
       <br />
@@ -31,8 +34,21 @@ const Devlog = () => {
         </span>
       </p>
       <li>
-        combination tone: this is a wild idea but you can expect to hear a
+        Combination tone: this is a wild idea but you can expect to hear a
         randomized voice between low and high tones!
+      </li>
+      <li>
+        Background sound: to drown out any excess noise if they persist after
+        recoding at home
+      </li>
+      <li>
+        Pause and play display: will need additional functions to remove event
+        listener and restart upon play. Also will add display of numbers that
+        are being cycled for a more user friendly experience.
+      </li>
+      <li>
+        Statistics display: when paused or stopped, it will show how many
+        numbers you have listened to!
       </li>
       <li>
         Random numbers instead of Pi: you might get used to the first 200
